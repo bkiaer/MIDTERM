@@ -112,7 +112,7 @@ ISR(TIMER1_OVF_vect) //timer overflow interrupt to delay for 1 second
 				char TEMP[256];
 				unsigned char AT[] = "AT\r\n"; //AT Commands
 				unsigned char CWMODE[] = "AT+CWMODE=1\r\n"; //Set MODE 
-				unsigned char CWJAP[] = "AT+CWJAP=\"Medrano\",\"brian0808\"\r\n"; //MUST CHANGE WIFI AND PASSWORD
+				unsigned char CWJAP[] = "AT+CWJAP=\"SSID\",\"PASSWORD\"\r\n"; //MUST CHANGE WIFI AND PASSWORD
 				unsigned char CIPMUX[] = "AT+CIPMUX=0\r\n";
 				unsigned char CIPSTART[] = "AT+CIPSTART=\"TCP\",\"184.106.153.149\",80\r\n";
 				unsigned char CIPSEND[] = "AT+CIPSEND=100\r\n";
